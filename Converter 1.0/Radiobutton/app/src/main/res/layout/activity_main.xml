@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/root_layout"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_weight="10">
+
+        <TextView
+
+            android:id="@+id/title.01"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="111dp"
+
+            android:text="Convertor 1.0"
+
+            android:textSize="40sp"
+
+            android:textStyle="bold|italic" />
+
+    </FrameLayout>
+
+
+    <RadioGroup
+
+        android:id="@+id/radio_group"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#017A06"
+
+        android:padding="15dp">
+
+
+        <TextView
+
+            android:id="@+id/title"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Выберите валюту конвертации"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+        <RadioButton
+
+            android:id="@+id/RUB"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+
+            android:checked="true"
+            android:text="Из рублей/RUB"
+            android:textColor="#FFFFFF" />
+
+
+        <RadioButton
+
+            android:id="@+id/USD"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+            android:text="Из долларов/USD"
+            android:textColor="#FFFFFF" />
+
+
+        <RadioButton
+            android:id="@+id/EUR"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+
+            android:text="Из евро/ EUR"
+            android:textColor="#FFFFFF" />
+
+
+        <RadioButton
+            android:id="@+id/GBP"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+
+            android:text="Из фунтов стерлингов/GBP"
+
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/KZT"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+
+            android:text="Из казахстангского тенге/KZT"
+            android:textColor="#FFFFFF" />
+
+    </RadioGroup>
+
+    <RadioGroup
+
+        android:id="@+id/radio_group.0"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#017A06"
+
+        android:padding="15dp">
+
+
+        <TextView
+
+            android:id="@+id/title.0"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Выберите валюту конвертации"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:id="@+id/RUB1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+
+            android:checked="true"
+            android:text="В рубли/RUB" />
+
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:id="@+id/USD1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+
+            android:checked="true"
+
+            android:text="В доллары/USD" />
+
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:id="@+id/EUR1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+
+            android:checked="true"
+
+            android:text="В евро/EUR" />
+
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:id="@+id/GBP1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+
+            android:checked="true"
+
+            android:text="В фунты стерлингов/GBP" />
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:id="@+id/KZT1"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+
+            android:checked="true"
+
+            android:text="В казахстангский тенге/KZT" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Введите сумму"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="#017A06"
+        android:onClick="onClick"
+        android:text="Конвертировать"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
